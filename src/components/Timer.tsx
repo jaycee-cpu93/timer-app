@@ -18,7 +18,7 @@ export default function Timer({ name, duration }: TimerProps) {
           if (prevTime <= 0) {
             return prevTime;
           }
-          return prevTime - 50
+          return (prevTime - 50)
         });
       }, 50);
       interval.current = timer
